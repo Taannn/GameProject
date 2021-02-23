@@ -27,10 +27,16 @@ public class FightPlayer2 : MonoBehaviour
 
     public void Hit()
     {
-        if (gameObject.transform.position.x - player1.transform.position.x < 7f)
+        if (Mathf.Abs(gameObject.transform.position.x - player1.transform.position.x) < 7f)
         {
-             player1.GetComponent<Stats>().getHit(1);
+            player1.GetComponent<Stats>().getHit(1);
+            player1.GetComponent<Animator>().SetBool("getHit", true);
         }
+    }
+
+    public void EndHit()
+    {
+        player1.GetComponent<Animator>().SetBool("getHit", false);
     }
 
     public void BigPunch1()

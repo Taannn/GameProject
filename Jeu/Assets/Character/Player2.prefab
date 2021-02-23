@@ -16304,7 +16304,7 @@ GameObject:
   - component: {fileID: 4565362426146417698}
   - component: {fileID: 4565362426146417699}
   m_Layer: 0
-  m_Name: svp
+  m_Name: Player2
   m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16521,7 +16521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalMovement: 0
-  speed: 5000
+  speed: 1300
   theAnim: {fileID: 0}
 --- !u!1 &4571133336440345971
 GameObject:

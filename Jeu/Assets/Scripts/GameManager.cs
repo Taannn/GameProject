@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public GameObject apparitionPlayer1;
     public GameObject apparitionPlayer2;
     public GameObject mainCam;
+    public GameObject limitMap;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,5 +30,6 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(3f);
         apparitionPlayer2.SetActive(false);
         mainCam.SetActive(true);
+        limitMap.SetActive(true);
     }
 }
