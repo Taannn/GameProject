@@ -7,6 +7,7 @@ public class FightPlayer1 : MonoBehaviour
     public Animator theAnim;
     public Stats statistiques;
     public GameObject player2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,7 @@ public class FightPlayer1 : MonoBehaviour
         BigPunch1();
         Punch1();
         Punch2();
-        isAlive();
+        isAlive();  
     }
 
     public void Hit()

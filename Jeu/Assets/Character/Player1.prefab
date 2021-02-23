@@ -909,11 +909,11 @@ GameObject:
   - component: {fileID: 8696344876040853714}
   - component: {fileID: 8696344876036718532}
   - component: {fileID: 8696344876044383124}
-  - component: {fileID: 8696344876098069340}
   - component: {fileID: 8696344876098069341}
   - component: {fileID: 8696344876098069286}
+  - component: {fileID: -7035524059294774031}
   m_Layer: 0
-  m_Name: ThirdPersonController
+  m_Name: Player1
   m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -969,7 +969,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 92
+  m_Constraints: 124
   m_CollisionDetection: 0
 --- !u!136 &8696344876044383124
 CapsuleCollider:
@@ -985,21 +985,6 @@ CapsuleCollider:
   m_Height: 1.6
   m_Direction: 1
   m_Center: {x: 0, y: 0.8, z: 0}
---- !u!114 &8696344876098069340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8696344876031441812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18c7375c8d3b49c4185dd359f2aa2ab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  theAnim: {fileID: 0}
-  statistiques: {fileID: 0}
-  player2: {fileID: 0}
 --- !u!114 &8696344876098069341
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1027,8 +1012,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74241fcbabbbc524aae3ba32579b21a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  maxHealth: 10
   currentHealth: 10
+  bar: {fileID: 5273171428158349366, guid: f49385b30232eb546a5422f91827733b, type: 3}
+--- !u!114 &-7035524059294774031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8696344876031441812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18c7375c8d3b49c4185dd359f2aa2ab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theAnim: {fileID: 0}
+  statistiques: {fileID: 0}
+  player2: {fileID: 0}
 --- !u!1 &8696344876031444134
 GameObject:
   m_ObjectHideFlags: 0

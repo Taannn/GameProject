@@ -5,14 +5,17 @@ using UnityEngine;
 public class Stats : MonoBehaviour
 {
 
-    public float health;
-    public float currentHealth;
+    public int maxHealth;
+    public int currentHealth;
+    public HealthBar bar;
     void Start()
     {
-        currentHealth = health;
+        currentHealth = maxHealth;
+        bar.SetMaxHealt(maxHealth);
     }
-    public void getHit(float damage)
+    public void getHit(int damage)
     {
         currentHealth -= damage;
+        bar.SetHealth(currentHealth);
     }
 }

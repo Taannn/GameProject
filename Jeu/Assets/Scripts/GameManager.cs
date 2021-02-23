@@ -6,18 +6,15 @@ public class GameManager : MonoBehaviour
 {
     public GameObject player1;
     public GameObject player2;
-    public Transform spawnPlayer1;
-    public Transform spawnPlayer2;
     public GameObject apparitionPlayer1;
     public GameObject apparitionPlayer2;
     public GameObject mainCam;
     public GameObject limitMap;
+    public GameObject canvas;
     // Start is called before the first frame update
     void Start()
     {
-        GameObject p1 = Instantiate(player1, spawnPlayer1);
-        GameObject p2 = Instantiate(player2, spawnPlayer2);
-        StartCoroutine(Animation(p1, p2));
+        StartCoroutine(Animation(player1, player2));
     }
 
     public IEnumerator Animation(GameObject p1, GameObject p2)
@@ -31,5 +28,6 @@ public class GameManager : MonoBehaviour
         apparitionPlayer2.SetActive(false);
         mainCam.SetActive(true);
         limitMap.SetActive(true);
+        canvas.SetActive(true);
     }
 }
