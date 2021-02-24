@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(3f);
         apparitionPlayer1.SetActive(false);
         apparitionPlayer2.SetActive(true);
-        p2.GetComponent<Animator>().Play("Unarmed-DiveRoll-Forward1");
+        p2.GetComponent<Animator>().Play("Salto");
         yield return new WaitForSeconds(3f);
         apparitionPlayer2.SetActive(false);
         mainCam.SetActive(true);
